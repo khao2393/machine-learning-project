@@ -32,6 +32,17 @@ Ihar, Phil, Simon & Kevin
 
 *There weren't many exit/entry points in our data set. The Random Forests machine learning model did not have enough data to be trained on to predict buy/sell points. If we changed the 50 Day MA to a 20 Day MA, there might be more opportunties. Also, the first 5 years of MSFT from 2010-2015, the close price is relativley flat so there were not many changes to the close price. Most of the volatility came from the last 5 years.*
 
+In addition to Random Forests, we used neural networks machine learning models -- 
+LSTM-RNN (recurring neural network) and LSTM-CNN (convolutional neural networking) to predict the future stock prize.
+We used the Open prize as the feature column and the closing prize as the target column.
+
+## LSTM-RNN and LSTM-CNN
+
+While we were able to create several models that effectively forecast a stock price, it wasn't accurate enough to be used for day trading because of too much of a time lag 
+between actual and predicted closing prices. 
+
+However, they seem to be helpful predicting/understanding long term trends within the stock.
+
 ## Trade Signal Backtesting
 
 ### How did we develop our trade signals?
